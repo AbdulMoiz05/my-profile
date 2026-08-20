@@ -8,6 +8,15 @@
   <meta name="description"
     content="Portfolio of Abdul Moiz, a BSCS student at ITU Lahore in his 6th semester. Showcasing projects in Game Dev, Flutter Dev, AI Automation, and ML.">
   <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- React & ReactDOM CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <!-- Babel Standalone for JSX parsing -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Framer Motion CDN -->
+  <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
 </head>
 
 <body>
@@ -107,226 +116,11 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Showcase</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-      <div class="projects-grid">
-
-        <!-- Game Dev Project 1: Helicopter Game -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="6" width="20" height="12" rx="3"></rect>
-              <path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"></path>
-            </svg>
-          </div>
-          <span class="project-tag">Game Development</span>
-          <h3 class="project-title">HeliStrike: Tactical Rescue</h3>
-          <p class="project-desc">A realistic 3D helicopter flight simulation game featuring rigid body physics, dynamic
-            wind resistance, tactical missile systems, and challenging rescue operations.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">C#</span>
-            <span class="tech-tag">RigidBody Physics</span>
-          </div>
-          <a href="#" class="project-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <!-- Game Dev Project 2: First Person Shooter -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="6" width="20" height="12" rx="3"></rect>
-              <path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"></path>
-            </svg>
-          </div>
-          <span class="project-tag">Game Development</span>
-          <h3 class="project-title">Vanguard: Tactical Ops</h3>
-          <p class="project-desc">A high-performance first-person shooter with intelligent AI behavior trees,
-            pathfinding networks, weapon handling mechanics, and interactive environmental destructibility.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">C#</span>
-            <span class="tech-tag">NavMesh AI</span>
-            <span class="tech-tag">Shader Graph</span>
-          </div>
-          <a href="#" class="project-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <!-- Game Dev Project 3: Maze Runner -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="6" width="20" height="12" rx="3"></rect>
-              <path d="M6 12h4M8 10v4M15 11h.01M18 13h.01"></path>
-            </svg>
-          </div>
-          <span class="project-tag">Game Development</span>
-          <h3 class="project-title">Labyrinth Escape: Maze Runner</h3>
-          <p class="project-desc">A thrilling maze navigation runner game with procedural maze generation, dynamic
-            light/shadow puzzles, and immersive time-based survival mechanics.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Godot</span>
-            <span class="tech-tag">GDScript</span>
-            <span class="tech-tag">Procedural Gen</span>
-          </div>
-          <a href="#" class="project-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <!-- Flutter Project 1: Multiple Games App -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-              <line x1="12" y1="18" x2="12.01" y2="18"></line>
-            </svg>
-          </div>
-          <span class="project-tag">Flutter Development</span>
-          <h3 class="project-title">GameHub: Mini Games</h3>
-          <p class="project-desc">An all-in-one Flutter application hosting interactive local mini-games like Chess,
-            Tic-Tac-Toe, and Sudoku. Features state management via Bloc and local caching.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Flutter</span>
-            <span class="tech-tag">Dart</span>
-            <span class="tech-tag">Bloc</span>
-            <span class="tech-tag">Local Storage</span>
-          </div>
-          <a href="#" class="project-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <!-- Flutter Project 2: Food Delivery App -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-              <line x1="12" y1="18" x2="12.01" y2="18"></line>
-            </svg>
-          </div>
-          <span class="project-tag">Flutter Development</span>
-          <h3 class="project-title">BiteSpeed Delivery App</h3>
-          <p class="project-desc">A premium cross-platform food delivery app integrating secure checkout, Google Maps
-            integration for live tracking, menu customizations, and interactive UI animations.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Flutter</span>
-            <span class="tech-tag">Dart</span>
-            <span class="tech-tag">Google Maps API</span>
-            <span class="tech-tag">Provider</span>
-          </div>
-          <a href="#" class="project-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <!-- ML Project: Face Recognition Attendance System for Gym -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2Z">
-              </path>
-              <path
-                d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2Z">
-              </path>
-            </svg>
-          </div>
-          <span class="project-tag">AI Automation & ML</span>
-          <h3 class="project-title">FitFace Gym Attendance</h3>
-          <p class="project-desc">A deep learning face recognition attendance system built to automate gym member logins
-            in real-time. Features active spoof detection and dashboard analytics.</p>
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">OpenCV</span>
-            <span class="tech-tag">FaceNet</span>
-            <span class="tech-tag">SQLite</span>
-          </div>
-          <a href="#" class="project-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-        <!-- AI Project: Traffic Signal Recognizer -->
-        <div class="project-card">
-          <div class="project-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2Z">
-              </path>
-              <path
-                d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2Z">
-              </path>
-            </svg>
-          </div>
-          <span class="project-tag">AI Automation & ML</span>
-          <h3 class="project-title">AI Traffic Signal Recognizer</h3>
-          <p class="project-desc">A state-of-the-art computer vision model that classifies traffic signals and signs in
-            real-time, designed to assist autonomous driving systems under varying lighting conditions.</p>
-          <div class="project-tech">
-            <span class="tech-tag">PyTorch</span>
-            <span class="tech-tag">YOLOv8</span>
-            <span class="tech-tag">CNN</span>
-            <span class="tech-tag">OpenCV</span>
-          </div>
-          <a href="#" class="project-link">
-            Learn More
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-      </div>
-    </div>
+  <section id="projects" class="relative py-20">
+    <div id="react-projects-root"></div>
   </section>
+  <script type="text/babel" type="module" src="./js/homepageProjects.js"></script>
+
 
   <!-- Skills Section -->
   <section id="skills">
